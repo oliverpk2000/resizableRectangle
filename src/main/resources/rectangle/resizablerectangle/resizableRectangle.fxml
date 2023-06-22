@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="775.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rectangle.resizablerectangle.ResizableRectangleController">
+   <children>
+      <HBox prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <Label text="Farbe" />
+            <ChoiceBox fx:id="choiceBox" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <Label text="Breite" />
+            <Slider fx:id="widthSlider" majorTickUnit="100.0" max="400.0" prefHeight="14.0" prefWidth="528.0" showTickLabels="true" showTickMarks="true" />
+         </children>
+      </HBox>
+      <HBox prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <Label text="Länge" />
+            <Slider fx:id="lengthSlider" majorTickUnit="100.0" max="400.0" prefHeight="14.0" prefWidth="528.0" showTickLabels="true" showTickMarks="true" />
+         </children>
+      </HBox>
+      <Label fx:id="areaOutputLabel" />
+      <AnchorPane prefHeight="700.0" prefWidth="700.0">
+         <children>
+            <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
